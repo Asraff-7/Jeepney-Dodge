@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Jeepney Dodge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main id="landing">
+  <div class="sign">
+    <h1>JEEPNEY DODGE</h1>
+    <small>Ruta: Kalsada ng Buhay · Bayad na po!</small>
+  </div>
+  <div class="stripe"></div>
+  <ul>
+    <li><b>Iwasan</b> ang mga kotse, tricycle, at bus na pababa sa kalsada.</li>
+    <li><b>Sunduin</b> ang mga pasahero para sa +5 score.</li>
+    <li><b>Tatlong buhay</b> ka lang. Bumibilis ang takbo habang tumataas ang score.</li>
+    <li><b>Controls:</b> arrow keys o A/D sa keyboard. Sa cellphone, mag-swipe o mag-tap sa kaliwa o kanan. P para mag-pause.</li>
+  </ul>
+  <div class="bestbox">Best score: <b id="landBest">0</b></div>
+  <button id="play">Maglaro na!</button>
+</main>
+
+<section id="game" hidden>
+  <div id="hud">
+    <span>Score: <span id="score">0</span></span>
+    <span id="lives">♥♥♥</span>
+    <span>Best: <span id="best">0</span></span>
+  </div>
+  <canvas id="c" width="360" height="560"></canvas>
+  <div class="hint">P para mag-pause · <a href="#" id="menu">Bumalik sa menu</a></div>
+  <div id="msg" hidden></div>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>
